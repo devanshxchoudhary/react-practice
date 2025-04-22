@@ -1,0 +1,3 @@
+[submodule "learning/todo-list-practice"]
+	path = learning/todo-list-practice
+	url = https://github.com/devanshxchoudhary/react-practice.git
