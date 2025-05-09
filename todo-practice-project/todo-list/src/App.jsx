@@ -1,20 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'; 
+import './App.css';
+import Todo from './components/Todo';
+import List from './components/List'; 
+import Completed from './components/Completed';  
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      
-    </>
-  )
+    <Router>
+      <nav>
+        <Link to="/todo">
+          <button>Todo</button>
+        </Link>
+
+        <Link to="/list">
+          <button>List</button>
+        </Link>
+
+        <Link to="/completed">
+          <button>Completed</button>
+        </Link>
+      </nav>
+
+      <Routes>
+        <Route path="/todo" element={<Todo />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/completed" element={<Completed />} />
+      </Routes>
+    </Router>
+  );
 }
 
-function Todo(){
-  
-}
-
-export default App
+export default App;
