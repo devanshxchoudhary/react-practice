@@ -1,0 +1,48 @@
+/* List.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fbfc;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #eef2f7;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #dce8f2;
+}
+
+li:first-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+li+li {
+    color: #555;
+}
